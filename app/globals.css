@@ -1,0 +1,76 @@
+/* app/globals.css */
+
+/* ❌ (Opsional) Hapus ini karena sudah pakai next/font
+@import url('https://fonts.googleapis.com/css2?family=Ovo&family=Outfit:wght@300;400;600;700&display=swap');
+*/
+
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* Light theme (default) */
+:root {
+  color-scheme: light;
+  --font-ovo: "Ovo", serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #11001F;
+
+  --bg: #ffffff;
+  --surface: rgba(255, 255, 255, 0.8);
+  --text: #0f172a;
+  --muted: #6b7280;
+  --accent: #2563eb;
+
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+
+  --grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Dark theme — aktif saat <html class="dark"> */
+:root.dark {
+  color-scheme: dark;
+  --bg: #071024;
+  --surface: rgba(2, 6, 23, 0.6);
+  --text: #e6eef8;
+  --muted: #9aa6bf;
+  --accent: #60a5fa;
+}
+
+/* Global reset ringan */
+* {
+  font-family: var(--font-outfit);
+  box-sizing: border-box;
+}
+
+/* Apply root vars to page */
+html, body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color .25s ease, color .25s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Helpers (tambahan di luar util Tailwind) */
+.font-ovo { font-family: var(--font-ovo); }
+.bg-surface { background-color: var(--surface); }
+.text-muted { color: var(--muted); }
+.btn-accent {
+  background-color: var(--accent);
+  color: white;
+  border-radius: 9999px;
+  padding: .5rem 1rem;
+}
+
+/* Nav anim */
+nav { transition: background-color .25s ease, box-shadow .25s ease; }
+
+/* Grid helper */
+.auto-grid {
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  gap: 1.5rem;
+}

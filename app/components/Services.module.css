@@ -1,0 +1,95 @@
+/* Services.module.css */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  scroll-margin-top: 5rem;
+}
+
+.headingCenter {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem; /* sesuaikan */
+  margin-bottom: 1rem;
+}
+
+.description {
+  text-align: center;
+  max-width: 48rem;
+  margin: 1rem auto 3rem;
+}
+
+/* GRID: 1 kolom mobile, 2 tablet, 4 desktop */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* breakpoint sederhana */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: transform .25s ease, box-shadow .25s ease;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  min-height: 180px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.iconWrap {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleCard {
+  font-size: 1.125rem;
+  color: #1f2937;
+}
+
+.cardText {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-top: 0.25rem;
+}
+
+.readMore {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 0.95rem;
+}
