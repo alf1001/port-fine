@@ -82,19 +82,19 @@ export const workData = [
       {
         title: "E-Kahi",
         description: "Web-based digital service application",
-        bgImage: "/images/ekahi.png",
+        bgImage: '/work-1.png',
         link: "https://github.com/Sayankusuma/E-Kahi"
     },
     {
         title: "Brofin",
         description: "Financial management application",
-        bgImage: "/images/brofin.png",
+        bgImage: '/work-2.png',
         link: "https://drive.google.com/file/d/1jkG5-ptNPlz0P3iS-sQzR1bd8uXR7eTm/view"
     },
     {
         title: "Sign Language Detection",
         description: "YOLOv11-based sign language detection",
-        bgImage: "/images/signlanguage.png",
+        bgImage: '/work-3.png',
         link: "https://signlanguageyolov11-nc9bsm6kx5axchm4chvrkt.streamlit.app/"
     },
     {
