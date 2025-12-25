@@ -95,7 +95,7 @@ export const workData = [
         title: "Sign Language Detection",
         description: "YOLOv11-based sign language detection",
         bgImage: '/work-3.png',
-        link: "https://signlanguageyolov11-nc9bsm6kx5axchm4chvrkt.streamlit.app/"
+        link: "https://signlanguageyolov11-alf.streamlit.app/"
     },
     {
         title: 'Awesome PLN',
