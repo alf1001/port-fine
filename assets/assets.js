@@ -79,25 +79,29 @@ export const assets = {
 };
 
 export const workData = [
-    {
-        title: 'E-Kahi',
-        description: 'Mobile App',
-        bgImage: '/work-1.png',
-    },
-        {
-        title: 'Sign Language',
-        description: 'Computer Vision',
-        bgImage: '/work-2.png',
+      {
+        title: "E-Kahi",
+        description: "Web-based digital service application",
+        bgImage: "/images/ekahi.png",
+        link: "https://github.com/Sayankusuma/E-Kahi"
     },
     {
-        title: 'Brofin',
-        description: 'Machine Learning & Mobile App',
-        bgImage: '/work-3.png',
+        title: "Brofin",
+        description: "Financial management application",
+        bgImage: "/images/brofin.png",
+        link: "https://drive.google.com/file/d/1jkG5-ptNPlz0P3iS-sQzR1bd8uXR7eTm/view"
+    },
+    {
+        title: "Sign Language Detection",
+        description: "YOLOv11-based sign language detection",
+        bgImage: "/images/signlanguage.png",
+        link: "https://signlanguageyolov11-nc9bsm6kx5axchm4chvrkt.streamlit.app/"
     },
     {
         title: 'Awesome PLN',
         description: 'Web Development',
         bgImage: '/work-4.png',
+        link: "https://awesomepln.id/login"
     },
 
 ];

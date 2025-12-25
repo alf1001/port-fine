@@ -45,12 +45,12 @@ const Work = () => {
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-10">
         {workData.map((project, index)=> (
   <a
-    key={index}
-    href="https://awesomepln.id/login"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block"
-  >
+  key={index}
+  href={project.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
     <motion.div
       whileHover={{ scale: 1.05 }}
       transition={{duration:0.3}}
