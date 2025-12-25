@@ -44,46 +44,55 @@ const Work = () => {
           transition={{delay:0.9,duration: 0.6}}
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-10">
         {workData.map((project, index)=> (
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{duration:0.3}}
-            key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${project.bgImage})` }}
-          >
-            <div
-              className={`
-                w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
-                flex items-center justify-between duration-500 group-hover:bottom-7
+  <a
+    key={index}
+    href="https://awesomepln.id/login"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      transition={{duration:0.3}}
+      className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+      style={{ backgroundImage: `url(${project.bgImage})` }}
+    >
+      <div
+        className={`
+          w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
+          flex items-center justify-between duration-500 group-hover:bottom-7
 
-                ${isDark 
-                  ? "bg-[rgba(0,0,0,0.07)] border border-gray-600"
-                  : "bg-white border border-gray-300 shadow-md"
-                }
-              `}
-            >
-              <div>
-                <h2 className={`font-semibold ${isDark ? "text-gray-100" : "text-black"}`}>
-                  {project.title}
-                </h2>
-                <p className={`text-sm ${isDark ? "text-white" : "text-gray-700"}`}>
-                  {project.description}
-                </p>
-              </div>
+          ${isDark 
+            ? "bg-[rgba(0,0,0,0.07)] border border-gray-600"
+            : "bg-white border border-gray-300 shadow-md"
+          }
+        `}
+      >
+        <div>
+          <h2 className={`font-semibold ${isDark ? "text-gray-100" : "text-black"}`}>
+            {project.title}
+          </h2>
+          <p className={`text-sm ${isDark ? "text-white" : "text-gray-700"}`}>
+            {project.description}
+          </p>
+        </div>
 
-              <div className={`
-                border rounded-full aspect-square flex items-center justify-center transition
-                ${isDark
-                  ? "border-gray-400 bg-[rgba(255,255,255,0.1)] hover:bg-gray-300"
-                  : "border-black shadow-[2px_2px_0_#000] hover:bg-lime-300"
-                }
-              `}
-              >
-                <Image src={assets.send_icon} alt="send icon" className="w-5" />
-              </div>
-            </div>
-          </motion.div>
-        ))}
+        <div
+          className={`
+            border rounded-full aspect-square flex items-center justify-center transition
+            ${isDark
+              ? "border-gray-400 bg-[rgba(255,255,255,0.1)] hover:bg-gray-300"
+              : "border-black shadow-[2px_2px_0_#000] hover:bg-lime-300"
+            }
+          `}
+        >
+          <Image src={assets.send_icon} alt="send icon" className="w-5" />
+        </div>
+      </div>
+    </motion.div>
+  </a>
+))}
+
       </motion.div>
 
       <motion.a
